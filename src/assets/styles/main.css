@@ -1,0 +1,135 @@
+@import 'tailwindcss';
+@import 'flowbite/src/themes/default';
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@font-face {
+  font-family: 'RougeScript';
+  src: url('/src/assets/fonts/Rouge_Script/RougeScript-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('/src/assets/fonts/Karla/Karla-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla-Bold';
+  src: url('/src/assets/fonts/Karla/Karla-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Karla-Italic';
+  src: url('/src/assets/fonts/Karla/Karla-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Basic';
+  src: url('/src/assets/fonts/Basic/Basic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: underline;
+}
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: var(--color-alt-dark);
+  color-scheme: light dark;
+
+  font-family: 'Karla', sans-serif;
+  font-size: 14x;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --font-rougeScript: 'RougeScript', sans-serif;
+
+  --font-karla: 'Karla', sans-serif;
+  --font-karla-italic: 'Karla-Italic', sans-serif;
+  --font-karla-bold: 'Karla-Bold', sans-serif;
+
+  --font-basic: 'Basic', sans-serif;
+
+  --color-putih-keabuan: #c1cdd8;
+  --color-off-white: #f5f5f5;
+  --color-alt-dark: #1a1d21;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--color-alt-dark);
+    color: var(--color-putih-keabuan);
+  }
+  a:hover {
+    color: var(--color-alt-dark);
+  }
+  button {
+    background-color: var(--color-alt-dark);
+  }
+}
+
+.txt-wedding-of {
+  font-display: uppercase;
+  font-stretch: extra-expanded;
+  font-family: var(--font-karla);
+  font-size: 16px;
+  color: var(--color-putih-keabuan);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -7px;
+  padding: 0px;
+}
+
+.txt-mempelai {
+  font-family: var(--font-basic);
+  font-stretch: extra-expanded;
+  font-size: 52px;
+  color: var(--color-off-white);
+  text-align: center;
+  margin-top: -10px;
+}
+
+.animated {
+  opacity: 0;
+}
+
+.animation-fade-in {
+  animation: fade-in 0.8s ease-in-out;
+  -webkit-animation: fade-in 0.8s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated:after {
+  opacity: 1;
+}
+.animated:not(.animation-fade-in):after {
+  opacity: 0;
+}
