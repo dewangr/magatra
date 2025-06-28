@@ -8,7 +8,7 @@ const rspvData = ref([])
 
 async function getRsvpData() {
     try {
-        const response = await axios.get('http://localhost:3000/api/rsvp');
+        const response = await axios.get(`${process.env.BASE_URL}/api/rsvps`);
         rspvData.value = response.data.data;
         return;
     } catch (error) {
@@ -31,7 +31,7 @@ const ucapan = ref('');
 
 async function addItem() {
     try {
-        const response = await axios.post(`${BASE_URL}/api/rsvp/store`, {
+        const response = await axios.post(`${BASE_URL}/api/rsvps`, {
             nama_tamu: namaTamu.value,
             ucapan: ucapan.value,
         });
