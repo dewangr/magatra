@@ -16,4 +16,7 @@ export default defineConfig({
   define: {
     global: {},
   },
+  build: {
+    target: 'es2015',
+  },
 })
