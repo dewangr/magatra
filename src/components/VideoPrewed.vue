@@ -4,8 +4,7 @@
     <div class="relative w-full flex flex-col">
         <div class="shadow-layer absolute h-screen inset-0 bg-black opacity-50 z-10 "></div>
         <div class=" relative h-screen">
-            <img src="../assets/photo/background/bg-video.webp"
-                class="object-cover absolute h-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
+            <img src="../assets/photo/background/bg-video.webp" class="object-cover absolute h-screen " alt="...">
             <div class="main-content relative z-20 flex flex-col justify-center text-start h-[60%] mx-7">
                 <div class="textAwalan animated">
                     <h2 class="uppercase font-basic my-2 tracking-[0.3rem] text-2xl">Cerita Kami</h2>

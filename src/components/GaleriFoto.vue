@@ -44,8 +44,7 @@ const allImages = [
     <div class=" relative w-full flex flex-col">
         <div class="shadow-layer absolute h-screen inset-0 bg-black opacity-50 z-10 "></div>
         <div class="relative h-screen ">
-            <img src="../assets/photo/background/bg-galeri.webp"
-                class="object-cover absolute h-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
+            <img src="../assets/photo/background/bg-galeri.webp" class="object-cover absolute h-screen " alt="...">
             <div class="main-content relative z-10 flex flex-col justify-center h-[80%]
             mx-7">
                 <div class="textAwalan animated">

@@ -5,8 +5,7 @@ import "@/assets/styles/main.css"
     <div class=" relative w-full flex flex-col">
         <div class="shadow-layer absolute h-screen inset-0 bg-black opacity-50 z-10 "></div>
         <div class="relative h-screen">
-            <img src="../assets/photo/background/bg-suksma.webp"
-                class="object-cover absolute h-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
+            <img src="../assets/photo/background/bg-suksma.webp" class="object-cover absolute h-screen " alt="...">
             <div class="main-content relative z-20 grid grid-rows-4  h-screen mx-7">
                 <div class="maturSuksma flex flex-col justify-center text-start">
                     <div class="textJudul animated">

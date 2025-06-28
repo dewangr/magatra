@@ -8,8 +8,7 @@ const targetDate = new Date('2025-07-11T10:00:00'); // Set your target date here
     <div class=" relative w-full flex flex-col">
         <div class="shadow-layer absolute h-screen inset-0 bg-black opacity-50 z-10 "></div>
         <div class=" relative h-screen">
-            <img src="../assets/photo/background/bg-waktu.webp"
-                class="object-cover absolute h-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
+            <img src="../assets/photo/background/bg-waktu.webp" class="object-cover absolute h-screen " alt="...">
             <div class="main-content relative z-20 flex flex-col justify-center text-start  h-3/4 mx-7">
                 <div class="waktuPelaksanaan">
                     <h2 class="uppercase font-basic my-2 tracking-[0.3rem] text-2xl animated">Memadik</h2>
@@ -23,7 +22,7 @@ const targetDate = new Date('2025-07-11T10:00:00'); // Set your target date here
                     </div>
                 </div>
                 <div class="tempatPelaksanaan mb-2 text-lg animated">
-                    <h4>Jalan Desa Pendem, Jembrana</h4>
+                    <h4>Br. Anyar Sari Kangin, Desa Nusasari, Kec. Melaya, Kab. Jembrana</h4>
                 </div>
 
                 <div class="googleMaps my-2 text-lg animated">
