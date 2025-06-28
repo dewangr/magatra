@@ -8,7 +8,7 @@ const rspvData = ref([])
 
 async function getRsvpData() {
     try {
-        const response = await axios.get(`${process.env.BASE_URL}/api/rsvps`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/rsvps`);
         rspvData.value = response.data.data;
         return;
     } catch (error) {
@@ -31,7 +31,7 @@ const ucapan = ref('');
 
 async function addItem() {
     try {
-        const response = await axios.post(`${BASE_URL}/api/rsvps`, {
+        const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/rsvps`, {
             nama_tamu: namaTamu.value,
             ucapan: ucapan.value,
         });
@@ -83,7 +83,7 @@ async function addItem() {
                     </form>
                     <div class="hasilReservasi mt-7 flex flex-col max-h-56 overflow-y-scroll animated">
                         <CardUcapan v-for="(data, id) in rspvData" :key="id" :namaTamu="data.nama_tamu"
-                            :ucapan="data.ucapan" :timestampKomentar="data.timestamp" />
+                            :ucapan="data.ucapan" :timestampKomentar="data.created_at" />
                     </div>
 
                 </div>
