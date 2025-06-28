@@ -5,10 +5,10 @@ import Carousel from "../components/Carousel.vue";
 import Slide from "../components/Slide.vue";
 
 const carouselSlides = [
-    '/src/assets/photo/carousel/carousel1.webp',
-    '/src/assets/photo/carousel/carousel2.webp',
-    '/src/assets/photo/carousel/carousel3.webp',
-    '/src/assets/photo/carousel/carousel4.webp',
+    '/photos/carousel/carousel1.webp',
+    '/photos/carousel/carousel2.webp',
+    '/photos/carousel/carousel3.webp',
+    '/photos/carousel/carousel4.webp',
 ];
 
 </script>
