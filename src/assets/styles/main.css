@@ -73,9 +73,11 @@ a {
   :root {
     background-color: var(--color-alt-dark);
     color: var(--color-putih-keabuan);
+    -webkit-text-fill-color: var(--color-putih-keabuan);
   }
   a:hover {
     color: var(--color-alt-dark);
+    -webkit-text-fill-color: var(--color-alt-dark);
   }
   button {
     background-color: var(--color-alt-dark);
@@ -88,6 +90,7 @@ a {
   font-family: var(--font-karla);
   font-size: 16px;
   color: var(--color-putih-keabuan);
+  -webkit-text-fill-color: var(--color-putih-keabuan);
   text-align: center;
   margin-top: 30px;
   margin-bottom: -7px;
@@ -99,6 +102,7 @@ a {
   font-stretch: extra-expanded;
   font-size: 52px;
   color: var(--color-off-white);
+  -webkit-text-fill-color: var(--color-off-white);
   text-align: center;
   margin-top: -10px;
 }
@@ -110,20 +114,30 @@ a {
 .animation-fade-in {
   animation: fade-in 0.8s ease-in-out;
   -webkit-animation: fade-in 0.8s ease-in-out;
+  -moz-animation: fade-in 0.8s ease-in-out;
+  -ms-zoom-animation: fade-in 0.8s ease-in-out;
+  -o-animation: fade-in 0.8s ease-in-out;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
     transform: translateY(20px);
-    -webkit-transform: translateY(20px);
-    -moz-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    -o-transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 

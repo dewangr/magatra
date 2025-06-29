@@ -78,5 +78,6 @@ const allImages = [
     border-radius: 4px;
     box-shadow: 0 1px 2px 0 var(--color-alt-dark);
     object-fit: cover;
+    -o-object-fit: cover;
 }
 </style>
